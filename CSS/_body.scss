@@ -4,10 +4,10 @@ body {
     background-color: white;
     color: #122947;
     margin: 0 auto;
-}
 
-.body__wrap {
-    background-image: url(/assets/images/Rectangle35.png);
-    width: 1366px;
-    overflow: hidden;
+    .body__wrap {
+        background-image: url(/assets/images/Rectangle35.png);
+        width: 1366px;
+        overflow: hidden;
+    }
 }

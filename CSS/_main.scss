@@ -1,0 +1,184 @@
+.mainCare {
+    .mainCare__wrap {
+        display: flex;
+        margin: 0 auto;
+        max-width: 990px;
+        padding-bottom: 70px;
+
+        .mainCareBox {
+            flex: 1;
+
+            .careImg {
+                max-width: 330px;
+                margin-bottom: 15px;
+            }
+
+            .careLink {
+                @include flex-between;
+                @include text-font(16px, 500, 140%);
+            }
+
+            .mainInfo {
+                @include flex-center;
+                flex-direction: column;
+
+                .mainInfo__title {
+                    @include heading-font (58px, 500, normal);
+                    max-width: 260px;
+                    padding-top: 61px;
+                    margin-bottom: 30px;
+                }
+
+                .mainInfo__text p {
+                    @include text-font(18px, 400, 145%);
+                    text-align: center;
+                    max-width: 274px;
+                    margin-bottom: 40px;
+                }
+
+                .mainInfo__btn {
+                    @include flex-center;
+                    @include text-font(16px, 500, 140%);
+                    @include border;
+                    max-width: 141px;
+                    margin: 0 auto;
+                    width: 141px;
+                    height: 41px;
+                    padding: 13px 27px 16px;
+                }
+            }
+        }
+    }
+}
+
+.mainPage {
+    .mainSpring {
+        overflow: hidden;
+
+        .mainSpring_wrap {
+            background: url(../assets/images/банер\ 1.png);
+            position: relative;
+            width: 1366px;
+            height: 400px;
+            flex-shrink: 0;
+
+            .mainSpringBox {
+                @include flex-center;
+                flex-direction: column;
+                align-items: start;
+                max-width: 284px;
+                @include absolute (50%, 20%);
+
+                .mainSpringBox__title {
+                    @include heading-font (32px, 500, 125%);
+                    margin-bottom: 30px;
+                }
+
+                .mainSpringBox__text {
+                    max-width: 284px;
+                    margin-bottom: 40px;
+                }
+
+                .mainSpringBox__btn {
+                    @include flex-center;
+                    @include text-font(16px, 500, 140%);
+                    @include border;
+                    width: 141px;
+                    height: 41px;
+                }
+            }
+        }
+    }
+}
+
+.personalCare {
+    padding: 140px 98px;
+    overflow: hidden;
+
+    .personalCare__wrap {
+        position: relative;
+
+        .personalCareImg {
+            @include absolute (50%, 0%);
+            width: 670px;
+            height: 451px;
+        }
+
+        .personalCareBox {
+            width: 670px;
+            height: 583px;
+            background-color: #f4f1ed;
+            padding: 100px;
+
+            .personalCareBox__title {
+                @include heading-font (32px, 500, 130%);
+                margin-bottom: 40px;
+            }
+
+            .personalCareBox__text {
+                max-width: 329px;
+                margin-bottom: 45px;
+            }
+
+            .personalCareBox__text p {
+                @include text-font(18px, 400, 145%);
+                margin-bottom: 18px;
+            }
+
+            .personalCareBox__text p:last-child {
+                margin-bottom: 0;
+            }
+
+            .personalCareBox__btn {
+                @include flex-center;
+                @include text-font(16px, 500, 140%);
+                @include border;
+                width: 200px;
+                height: 41px;
+            }
+        }
+    }
+}
+
+.history {
+    overflow: hidden;
+
+    .history__wrap {
+        background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
+        width: 1366px;
+        height: 433px;
+        flex-shrink: 0;
+
+        .historyBox {
+            @include flex-center;
+            flex-direction: column;
+            margin: 0 auto;
+            flex-shrink: 0;
+            padding-top: 120px;
+
+            .historyBox__text {
+                max-width: 761px;
+                margin-bottom: 50px;
+            }
+
+            .historyBox__text p {
+                @include heading-font (31px, 500, 125%);
+                text-align: center;
+                width: 761px;
+                height: 102px;
+            }
+
+            .historyBox__text p :last-child {
+                margin-bottom: 0;
+            }
+
+            .historyBox__btn {
+                @include flex-center;
+                @include text-font(16px, 500, 140%);
+                @include border;
+                width: 163px;
+                height: 41px;
+            }
+        }
+    }
+}

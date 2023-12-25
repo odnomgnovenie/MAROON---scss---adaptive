@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #122947;
+  text-decoration: none;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 98px 70px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.menu a {
+  font-size: 16px;
+  margin-right: 35px;
+}
+
+.menu a:last-child {
+  margin-right: 0;
+}
+
+.usernav a {
+  margin-right: 30px;
+}
+
+.menunav a:last-child {
+  margin-right: 0;
+}
+
+.mainCare .mainCare__wrap {
+  display: flex;
+  margin: 0 auto;
+  max-width: 990px;
+  padding-bottom: 70px;
+}
+.mainCare .mainCare__wrap .mainCareBox {
+  flex: 1;
+}
+.mainCare .mainCare__wrap .mainCareBox .careImg {
+  max-width: 330px;
+  margin-bottom: 15px;
+}
+.mainCare .mainCare__wrap .mainCareBox .careLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.mainCare .mainCare__wrap .mainCareBox .mainInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainCare .mainCare__wrap .mainCareBox .mainInfo .mainInfo__title {
+  font-size: 58px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 260px;
+  padding-top: 61px;
+  margin-bottom: 30px;
+}
+.mainCare .mainCare__wrap .mainCareBox .mainInfo .mainInfo__text p {
+  font-size: 18px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  text-align: center;
+  max-width: 274px;
+  margin-bottom: 40px;
+}
+.mainCare .mainCare__wrap .mainCareBox .mainInfo .mainInfo__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  max-width: 141px;
+  margin: 0 auto;
+  width: 141px;
+  height: 41px;
+  padding: 13px 27px 16px;
+}
+
+.mainPage .mainSpring {
+  overflow: hidden;
+}
+.mainPage .mainSpring .mainSpring_wrap {
+  background: url(../assets/images/банер\ 1.png);
+  position: relative;
+  width: 1366px;
+  height: 400px;
+  flex-shrink: 0;
+}
+.mainPage .mainSpring .mainSpring_wrap .mainSpringBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  max-width: 284px;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(0, -50%);
+}
+.mainPage .mainSpring .mainSpring_wrap .mainSpringBox .mainSpringBox__title {
+  font-size: 32px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 30px;
+}
+.mainPage .mainSpring .mainSpring_wrap .mainSpringBox .mainSpringBox__text {
+  max-width: 284px;
+  margin-bottom: 40px;
+}
+.mainPage .mainSpring .mainSpring_wrap .mainSpringBox .mainSpringBox__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  width: 141px;
+  height: 41px;
+}
+
+.personalCare {
+  padding: 140px 98px;
+  overflow: hidden;
+}
+.personalCare .personalCare__wrap {
+  position: relative;
+}
+.personalCare .personalCare__wrap .personalCareImg {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0, -50%);
+  width: 670px;
+  height: 451px;
+}
+.personalCare .personalCare__wrap .personalCareBox {
+  width: 670px;
+  height: 583px;
+  background-color: #f4f1ed;
+  padding: 100px;
+}
+.personalCare .personalCare__wrap .personalCareBox .personalCareBox__title {
+  font-size: 32px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+.personalCare .personalCare__wrap .personalCareBox .personalCareBox__text {
+  max-width: 329px;
+  margin-bottom: 45px;
+}
+.personalCare .personalCare__wrap .personalCareBox .personalCareBox__text p {
+  font-size: 18px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  margin-bottom: 18px;
+}
+.personalCare .personalCare__wrap .personalCareBox .personalCareBox__text p:last-child {
+  margin-bottom: 0;
+}
+.personalCare .personalCare__wrap .personalCareBox .personalCareBox__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  width: 200px;
+  height: 41px;
+}
+
+.history {
+  overflow: hidden;
+}
+.history .history__wrap {
+  background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
+  width: 1366px;
+  height: 433px;
+  flex-shrink: 0;
+}
+.history .history__wrap .historyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-shrink: 0;
+  padding-top: 120px;
+}
+.history .history__wrap .historyBox .historyBox__text {
+  max-width: 761px;
+  margin-bottom: 50px;
+}
+.history .history__wrap .historyBox .historyBox__text p {
+  font-size: 31px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  text-align: center;
+  width: 761px;
+  height: 102px;
+}
+.history .history__wrap .historyBox .historyBox__text p :last-child {
+  margin-bottom: 0;
+}
+.history .history__wrap .historyBox .historyBox__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  width: 163px;
+  height: 41px;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  color: #122947;
+  margin: 0 auto;
+}
+
+.body__wrap {
+  background-image: url(/assets/images/Rectangle35.png);
+  width: 1366px;
+  overflow: hidden;
+}
+
+a {
+  color: #122947;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

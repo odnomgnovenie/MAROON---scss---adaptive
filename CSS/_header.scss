@@ -1,0 +1,27 @@
+.header__wrap {
+    @include flex-between;
+    padding: 40px 98px 70px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+
+.menu a {
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+.menu a:last-child {
+    margin-right: 0;
+}
+
+.usernav a {
+    margin-right: 30px;
+}
+
+.menunav a:last-child {
+    margin-right: 0;
+}

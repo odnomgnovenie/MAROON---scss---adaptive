@@ -20,22 +20,22 @@ a {
   align-items: center;
   padding: 40px 98px 70px;
 }
-.header .header__wrap .header__col .nav {
+.header .header__wrap .headerBox .nav {
   display: flex;
   align-items: center;
   gap: 51px;
 }
-.header .header__wrap .header__col .menu a {
+.header .header__wrap .headerBox .menu a {
   font-size: 16px;
   margin-right: 35px;
 }
-.header .header__wrap .header__col .menu a:last-child {
+.header .header__wrap .headerBox .menu a:last-child {
   margin-right: 0;
 }
-.header .header__wrap .header__col .usernav a {
+.header .header__wrap .headerBox .usernav a {
   margin-right: 30px;
 }
-.header .header__wrap .header__col .menunav a:last-child {
+.header .header__wrap .headerBox .menunav a:last-child {
   margin-right: 0;
 }
 

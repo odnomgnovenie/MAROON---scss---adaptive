@@ -45,17 +45,15 @@ a {
 }
 .headerBox_sm {
   width: 24px;
-  height: 12px;
   display: block;
 }
 @media only screen and (max-width: 767px) {
   .headerBox_sm {
-    width: 22px;
-    height: 11px;
     display: none;
   }
 }
 .headerBox_xs {
+  width: 22px;
   display: none;
   text-align: center;
 }
@@ -67,6 +65,7 @@ a {
 
 .logo_sm {
   display: block;
+  width: 131px;
 }
 @media only screen and (max-width: 767px) {
   .logo_sm {
@@ -74,13 +73,13 @@ a {
   }
 }
 .logo_xs {
-  display: block;
-  width: 131px;
-  height: 21px;
+  display: none;
+  width: 85px;
+  height: 13px;
 }
-@media only screen and (max-width: 1365px) {
+@media only screen and (max-width: 767px) {
   .logo_xs {
-    display: none;
+    display: block;
   }
 }
 
@@ -109,6 +108,7 @@ a {
 
 .cabinet {
   display: block;
+  flex: 1;
 }
 @media only screen and (max-width: 767px) {
   .cabinet {

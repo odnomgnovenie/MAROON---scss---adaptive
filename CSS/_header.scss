@@ -22,18 +22,16 @@
 
     &_sm {
         width: 24px;
-        height: 12px;
         display: block;
 
 
         @include xs {
-            width: 22px;
-            height: 11px;
             display: none;
         }
     }
 
     &_xs {
+        width: 22px;
         display: none;
         text-align: center;
 
@@ -46,6 +44,7 @@
 .logo {
     &_sm {
         display: block;
+        width: 131px;
 
         @include xs {
             display: none;
@@ -53,12 +52,12 @@
     }
 
     &_xs {
-        display: block;
-        width: 131px;
-        height: 21px;
+        display: none;
+        width: 85px;
+        height: 13px;
 
-        @include sm {
-            display: none;
+        @include xs {
+            display: block;
         }
     }
 }
@@ -93,6 +92,7 @@
 
 .cabinet {
     display: block;
+    flex: 1;
 
     @include xs {
         display: none;

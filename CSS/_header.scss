@@ -15,10 +15,10 @@
     }
 }
 
-
-.headerBox {
+.Hamburger {
     @include flex-center;
     text-align: center;
+
 
     &_sm {
         width: 24px;

@@ -74,13 +74,13 @@ a {
   }
 }
 .logo_xs {
+  display: block;
   width: 131px;
   height: 21px;
-  display: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1365px) {
   .logo_xs {
-    display: block;
+    display: none;
   }
 }
 

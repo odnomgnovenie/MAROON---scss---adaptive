@@ -53,12 +53,12 @@
     }
 
     &_xs {
+        display: block;
         width: 131px;
         height: 21px;
-        display: none;
 
-        @include xs {
-            display: block;
+        @include sm {
+            display: none;
         }
     }
 }

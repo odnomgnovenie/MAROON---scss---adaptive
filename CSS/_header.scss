@@ -1,31 +1,130 @@
 .header {
-    .header__wrap {
+    &__wrap {
         @include flex-between;
         padding: 40px 98px 70px;
 
-        .headerBox {
-            .nav {
-                display: flex;
-                align-items: center;
-                gap: 51px;
-            }
+        @include xs {
+            @include flex-between;
+            padding: 30px 15px 60px;
+        }
 
-            .menu a {
-                font-size: 16px;
-                margin-right: 35px;
-            }
+        @include sm {
+            @include flex-between;
+            padding: 40px 45px 70px;
+        }
+    }
+}
 
-            .menu a:last-child {
-                margin-right: 0;
-            }
 
-            .usernav a {
-                margin-right: 30px;
-            }
+.headerBox {
+    @include flex-center;
+    text-align: center;
 
-            .menunav a:last-child {
-                margin-right: 0;
-            }
+    &_sm {
+        width: 24px;
+        height: 12px;
+        display: block;
+
+
+        @include xs {
+            width: 22px;
+            height: 11px;
+            display: none;
+        }
+    }
+
+    &_xs {
+        display: none;
+        text-align: center;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+.logo {
+    &_sm {
+        display: block;
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    &_xs {
+        width: 131px;
+        height: 21px;
+        display: none;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+
+.nav {
+    @include flex-center;
+    gap: 51px;
+
+    &__menu {
+        @include sm {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.usernav {
+    &__link {
+        margin-right: 30px;
+    }
+}
+
+.cabinet {
+    display: block;
+
+    @include xs {
+        display: none;
+    }
+
+    &_xs {
+        display: none;
+        width: 13px;
+        height: 16px;
+        margin-right: 20px;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+.basket {
+    display: block;
+
+    @include xs {
+        display: none;
+    }
+
+    &_xs {
+        display: none;
+        width: 14px;
+        height: 16px;
+        margin-right: 15px;
+
+        @include xs {
+            display: block;
         }
     }
 }

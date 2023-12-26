@@ -1,13 +1,29 @@
 body {
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 400;
-    background-color: white;
+    background: #f8f8f6;
     color: #122947;
+}
+
+.hero {
+    background-image: url(/assets/images/Rectangle35.png);
+    @include background;
+}
+
+.hero__wrap .mainCare__wrap .mainSpring__wrap .personalCare__wrap .history__wrap {
+    max-width: 1366px;
     margin: 0 auto;
 
-    .body__wrap {
-        background-image: url(/assets/images/Rectangle35.png);
-        width: 1366px;
-        overflow: hidden;
+    @include sm {
+        max-width: 767px;
     }
+
+    @include xs {
+        max-width: 319px;
+    }
+}
+
+a {
+    color: #122947;
+    text-decoration: none;
 }

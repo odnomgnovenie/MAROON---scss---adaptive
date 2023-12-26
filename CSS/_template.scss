@@ -20,6 +20,12 @@ a {
     align-items: center;
 }
 
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -47,11 +53,38 @@ a {
     line-height: $height;
 }
 
-@mixin absolute ($top , $right ) {
+@mixin absolute-right ($top , $right ) {
     position: absolute;
     top: $top;
     right: $right;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+}
+
+@mixin absolut-top-center ($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+@mixin background () {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media only screen and (max-width: 1365px) {
+        @content;
+    }
 }

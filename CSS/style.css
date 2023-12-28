@@ -348,6 +348,18 @@ a {
   height: 41px;
   padding: 13px 27px 16px;
 }
+@media only screen and (max-width: 767px) {
+  .mainInfo__btn {
+    font-size: 14px;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    width: 132px;
+    height: 40px;
+    padding: 13px 28px 16px;
+  }
+}
 
 .mainSpring {
   background: url(../assets/images/банер\ 1.png);

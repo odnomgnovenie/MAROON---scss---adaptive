@@ -276,7 +276,6 @@ a {
   font-weight: 500;
   line-height: normal;
   max-width: 260px;
-  height: 40px;
   padding-top: 61px;
   margin-bottom: 30px;
 }
@@ -288,7 +287,6 @@ a {
     font-weight: 500;
     line-height: normal;
     max-width: 242px;
-    height: 39px;
     padding-top: 28px;
     margin-bottom: 30px;
   }
@@ -301,8 +299,7 @@ a {
     font-weight: 500;
     line-height: normal;
     max-width: 188px;
-    width: 188px;
-    height: 30px;
+    height: 40px;
     padding-top: 0px;
     margin-bottom: 20px;
   }
@@ -361,7 +358,7 @@ a {
   }
 }
 
-.mainSpring {
+.mainSpring__wrap {
   background: url(../assets/images/банер\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -369,8 +366,14 @@ a {
   height: 400px;
   position: relative;
 }
+@media only screen and (max-width: 1365px) {
+  .mainSpring__wrap {
+    background-image: url(../assets/images/банер\ 1\ 432.png);
+    height: 432px;
+  }
+}
 @media only screen and (max-width: 767px) {
-  .mainSpring {
+  .mainSpring__wrap {
     background-image: url(../assets/images/баннер\ 1vert.png);
     height: 562px;
   }
@@ -379,9 +382,21 @@ a {
 .mainSpringBox {
   position: absolute;
   top: 50%;
-  right: 20%;
+  right: 0%;
   transform: translate(0, -50%);
-  width: 284px;
+  max-width: 284px;
+  margin-right: 284px;
+}
+@media only screen and (max-width: 1365px) {
+  .mainSpringBox {
+    margin-right: 85px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainSpringBox {
+    /* @include absolut-top-center(0%, 50%); */
+    /* margin-top: 296px; */
+  }
 }
 .mainSpringBox__title {
   font-size: 32px;
@@ -389,7 +404,29 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
+  max-width: 277px;
+  padding-top: 81px;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 1365px) {
+  .mainSpringBox__title {
+    font-size: 32px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    max-width: 277px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainSpringBox__title {
+    font-size: 28px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    max-width: 243px;
+  }
 }
 .mainSpringBox__text {
   margin-bottom: 40px;
@@ -405,8 +442,11 @@ a {
   line-height: 140%;
   border-radius: 2px;
   border: 1px solid #b3bac1;
+  max-width: 141px;
+  margin: 0 auto;
   width: 141px;
   height: 41px;
+  padding: 13px 27px 16px;
 }
 
 .personalCare {
@@ -583,16 +623,19 @@ body {
 
 .hero__wrap .mainCare__wrap .mainSpring__wrap .personalCare__wrap .history__wrap {
   max-width: 1366px;
+  height: 650px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1365px) {
   .hero__wrap .mainCare__wrap .mainSpring__wrap .personalCare__wrap .history__wrap {
     max-width: 767px;
+    height: 550px;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero__wrap .mainCare__wrap .mainSpring__wrap .personalCare__wrap .history__wrap {
     max-width: 319px;
+    height: 549px;
   }
 }
 

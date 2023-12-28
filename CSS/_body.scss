@@ -12,14 +12,17 @@ body {
 
 .hero__wrap .mainCare__wrap .mainSpring__wrap .personalCare__wrap .history__wrap {
     max-width: 1366px;
+    height: 650px;
     margin: 0 auto;
 
     @include sm {
         max-width: 767px;
+        height: 550px;
     }
 
     @include xs {
         max-width: 319px;
+        height: 549px;
     }
 }
 

@@ -204,21 +204,15 @@
         }
     }
 
-    &__text {
+    &__text p {
+        @include heading-font(18px, 400, 145%);
+        height: 65px;
         margin-bottom: 40px;
 
-        p {
-            @include heading-font(18px, 400, 145%);
-            margin-bottom: 40px;
-            height: 65px;
-
-
-
-            @include xs {
-                @include heading-font(16px, 400, 145%);
-                margin-bottom: 30px;
-                height: 57px;
-            }
+        @include xs {
+            @include heading-font(16px, 400, 145%);
+            margin-bottom: 30px;
+            height: 57px;
         }
     }
 
@@ -231,6 +225,8 @@
         padding: 13px 28px 16px;
 
         @include xs {
+            width: 132px;
+            height: 40px;
             margin: 0 auto;
         }
     }

@@ -23,6 +23,7 @@
 }
 
 .careImg {
+
     width: 330px;
     margin-bottom: 15px;
 
@@ -141,90 +142,130 @@
     padding: 140px 98px;
     overflow: hidden;
 
-    .personalCare__wrap {
+    &__wrap {
         position: relative;
+    }
+}
 
-        .personalCareImg {
-            @include absolute-right (50%, 0%);
-            width: 670px;
-            height: 451px;
-        }
+.personalCareImg {
+    @include absolute-right (50%, 0%);
+    width: 670px;
+    height: 451px;
+}
 
-        .personalCareBox {
-            width: 670px;
-            height: 583px;
-            background-color: #f4f1ed;
-            padding: 100px;
+.personalCareBox {
+    width: 670px;
+    height: 583px;
+    background-color: #f4f1ed;
+    padding: 100px;
 
-            .personalCareBox__title {
-                @include heading-font(32px, 500, 130%);
-                margin-bottom: 40px;
-            }
+    &__title {
+        @include heading-font(32px, 500, 130%);
+        margin-bottom: 40px;
+    }
 
-            .personalCareBox__text {
-                max-width: 329px;
-                margin-bottom: 45px;
-            }
+    &__text {
+        max-width: 329px;
+        margin-bottom: 45px;
+    }
 
-            .personalCareBox__text p {
-                @include text-font(18px, 400, 145%);
-                margin-bottom: 18px;
-            }
+    &__text p {
+        @include text-font(18px, 400, 145%);
+        margin-bottom: 18px;
+    }
 
-            .personalCareBox__text p:last-child {
-                margin-bottom: 0;
-            }
+    &__text p:last-child {
+        margin-bottom: 0;
+    }
 
-            .personalCareBox__btn {
-                @include flex-center;
-                @include text-font(16px, 500, 140%);
-                @include border;
-                width: 200px;
-                height: 41px;
-            }
-        }
+    &__btn {
+        @include flex-center;
+        @include text-font(16px, 500, 140%);
+        @include border;
+        width: 200px;
+        height: 41px;
     }
 }
 
 .history {
     overflow: hidden;
 
-    .history__wrap {
+    &__wrap {
         background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
         width: 1366px;
         height: 433px;
-        flex-shrink: 0;
+    }
+}
 
-        .historyBox {
-            @include flex-center;
-            flex-direction: column;
-            margin: 0 auto;
-            flex-shrink: 0;
-            padding-top: 120px;
+.historyBox {
+    @include flex-center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 120px;
 
-            .historyBox__text {
-                max-width: 761px;
-                margin-bottom: 50px;
-            }
+    &__text {
+        max-width: 761px;
+        margin-bottom: 50px;
+    }
 
-            .historyBox__text p {
-                @include heading-font(31px, 500, 125%);
-                text-align: center;
-                width: 761px;
-                height: 102px;
-            }
+    &__text p {
+        @include heading-font(31px, 500, 125%);
+        text-align: center;
+        width: 761px;
+        height: 102px;
+    }
 
-            .historyBox__text p :last-child {
-                margin-bottom: 0;
-            }
+    &__text p :last-child {
+        margin-bottom: 0;
+    }
 
-            .historyBox__btn {
-                @include flex-center;
-                @include text-font(16px, 500, 140%);
-                @include border;
-                width: 163px;
-                height: 41px;
-            }
-        }
+    &__btn {
+        @include flex-center;
+        @include text-font(16px, 500, 140%);
+        @include border;
+        width: 163px;
+        height: 41px;
+    }
+}
+
+.mainGallery {
+    overflow: hidden;
+
+
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F8F8F6;
+        width: 1366px;
+        height: 594px;
+    }
+}
+
+.mainGalleryBox {
+
+    &__title {
+        @include heading-font(32px, 500, 125%);
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        max-width: 269px;
+        margin-bottom: 40px;
+    }
+
+    &__text p {
+        @include text-font(18px, 400, 145%);
+        width: 269px;
+        height: 66px;
+    }
+
+    &__btn {
+        @include flex-center;
+        @include text-font(16px, 500, 140%);
+        @include border;
+        width: 170px;
+        height: 41px;
     }
 }

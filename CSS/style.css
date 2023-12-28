@@ -40,12 +40,23 @@ a {
 .Hamburger {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   text-align: center;
+  display: none;
+}
+@media only screen and (max-width: 1365px) {
+  .Hamburger {
+    display: flex;
+  }
 }
 .Hamburger_sm {
   width: 24px;
-  display: block;
+  display: none;
+}
+@media only screen and (max-width: 1365px) {
+  .Hamburger_sm {
+    display: block;
+  }
 }
 @media only screen and (max-width: 767px) {
   .Hamburger_sm {
@@ -86,7 +97,7 @@ a {
 .nav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   gap: 51px;
 }
 @media only screen and (max-width: 1365px) {
@@ -102,13 +113,19 @@ a {
   margin-right: 0;
 }
 
-.usernav__link {
-  margin-right: 30px;
+.usernav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .usernav {
+    gap: 20px;
+  }
 }
 
 .cabinet {
   display: block;
-  flex: 1;
 }
 @media only screen and (max-width: 767px) {
   .cabinet {
@@ -119,7 +136,6 @@ a {
   display: none;
   width: 13px;
   height: 16px;
-  margin-right: 20px;
 }
 @media only screen and (max-width: 767px) {
   .cabinet_xs {
@@ -139,7 +155,6 @@ a {
   display: none;
   width: 14px;
   height: 16px;
-  margin-right: 15px;
 }
 @media only screen and (max-width: 767px) {
   .basket_xs {
@@ -217,7 +232,7 @@ a {
 .mainInfo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   flex-direction: column;
 }
 .mainInfo__title {
@@ -279,7 +294,7 @@ a {
 .mainInfo__btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -330,7 +345,7 @@ a {
 .mainSpringBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -346,10 +361,11 @@ a {
   padding: 140px 98px;
   overflow: hidden;
 }
-.personalCare .personalCare__wrap {
+.personalCare__wrap {
   position: relative;
 }
-.personalCare .personalCare__wrap .personalCareImg {
+
+.personalCareImg {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -357,13 +373,14 @@ a {
   width: 670px;
   height: 451px;
 }
-.personalCare .personalCare__wrap .personalCareBox {
+
+.personalCareBox {
   width: 670px;
   height: 583px;
   background-color: #f4f1ed;
   padding: 100px;
 }
-.personalCare .personalCare__wrap .personalCareBox .personalCareBox__title {
+.personalCareBox__title {
   font-size: 32px;
   font-family: Raleway;
   font-style: normal;
@@ -371,11 +388,11 @@ a {
   line-height: 130%;
   margin-bottom: 40px;
 }
-.personalCare .personalCare__wrap .personalCareBox .personalCareBox__text {
+.personalCareBox__text {
   max-width: 329px;
   margin-bottom: 45px;
 }
-.personalCare .personalCare__wrap .personalCareBox .personalCareBox__text p {
+.personalCareBox__text p {
   font-size: 18px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -383,13 +400,13 @@ a {
   line-height: 145%;
   margin-bottom: 18px;
 }
-.personalCare .personalCare__wrap .personalCareBox .personalCareBox__text p:last-child {
+.personalCareBox__text p:last-child {
   margin-bottom: 0;
 }
-.personalCare .personalCare__wrap .personalCareBox .personalCareBox__btn {
+.personalCareBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -404,26 +421,25 @@ a {
 .history {
   overflow: hidden;
 }
-.history .history__wrap {
+.history__wrap {
   background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
   width: 1366px;
   height: 433px;
-  flex-shrink: 0;
 }
-.history .history__wrap .historyBox {
+
+.historyBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   flex-direction: column;
   margin: 0 auto;
-  flex-shrink: 0;
   padding-top: 120px;
 }
-.history .history__wrap .historyBox .historyBox__text {
+.historyBox__text {
   max-width: 761px;
   margin-bottom: 50px;
 }
-.history .history__wrap .historyBox .historyBox__text p {
+.historyBox__text p {
   font-size: 31px;
   font-family: Raleway;
   font-style: normal;
@@ -433,13 +449,13 @@ a {
   width: 761px;
   height: 102px;
 }
-.history .history__wrap .historyBox .historyBox__text p :last-child {
+.historyBox__text p :last-child {
   margin-bottom: 0;
 }
-.history .history__wrap .historyBox .historyBox__btn {
+.historyBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -448,6 +464,54 @@ a {
   border-radius: 2px;
   border: 1px solid #b3bac1;
   width: 163px;
+  height: 41px;
+}
+
+.mainGallery {
+  overflow: hidden;
+}
+.mainGallery__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F8F8F6;
+  width: 1366px;
+  height: 594px;
+}
+
+.mainGalleryBox__title {
+  font-size: 32px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  margin-bottom: 30px;
+}
+.mainGalleryBox__text {
+  max-width: 269px;
+  margin-bottom: 40px;
+}
+.mainGalleryBox__text p {
+  font-size: 18px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  width: 269px;
+  height: 66px;
+}
+.mainGalleryBox__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+  font-size: 16px;
+  font-family: Mplus 1p;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  width: 170px;
   height: 41px;
 }
 

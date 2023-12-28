@@ -20,20 +20,20 @@ a {
   align-items: center;
   padding: 40px 98px 70px;
 }
-@media only screen and (max-width: 767px) {
-  .header__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 15px 60px;
-  }
-}
 @media only screen and (max-width: 1365px) {
   .header__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 45px 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px 60px;
   }
 }
 

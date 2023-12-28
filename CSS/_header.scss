@@ -3,15 +3,16 @@
         @include flex-between;
         padding: 40px 98px 70px;
 
+        @include sm {
+            @include flex-between;
+            padding: 40px 45px 70px;
+        }
+
         @include xs {
             @include flex-between;
             padding: 30px 15px 60px;
         }
 
-        @include sm {
-            @include flex-between;
-            padding: 40px 45px 70px;
-        }
     }
 }
 

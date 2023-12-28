@@ -1,34 +1,60 @@
 .mainCare {
+
     &__wrap {
-        display: flex;
+        @include flex-between;
         margin: 0 auto;
-        max-width: 990px;
-        padding-bottom: 70px;
+        max-width: 1366px;
+        padding: 0px 168px 70px;
 
         @include sm {
-            max-width: 679px;
             position: relative;
-            justify-content: space-between;
+            max-width: 768px;
+            padding: 0px 45px 70px;
+        }
+
+        @include xs {
+            display: flex;
+            position: relative;
+            padding: 190px 15px 60px;
         }
     }
 }
 
 .mainCareBox {
+    width: 330px;
+
+    @include sm {
+        width: 245px;
+    }
+
+    @include xs {
+        width: 130px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     &_levitation {
         @include sm {
-            position: relative;
-            @include absolut-top-center (0%, 50%)
+            width: 274px;
+            @include absolut-top-center (0%, 50%);
+        }
+
+        @include xs {
+            max-width: 243px;
+            @include absolut-top-center (0%, 50%);
+
         }
     }
 }
 
 .careImg {
-
-    width: 330px;
     margin-bottom: 15px;
 
     @include sm {
-        width: 245px;
+        margin-bottom: 15px;
     }
 
     @include xs {
@@ -60,20 +86,24 @@
     &__title {
         @include heading-font(58px, 500, normal);
         max-width: 260px;
+        height: 40px;
         padding-top: 61px;
         margin-bottom: 30px;
 
         @include sm {
             @include heading-font(54px, 500, normal);
             max-width: 242px;
+            height: 39px;
             padding-top: 28px;
             margin-bottom: 30px;
         }
 
         @include xs {
             @include heading-font(42px, 500, normal);
-            max-width: 242px;
-            padding-top: 60px;
+            max-width: 188px;
+            width: 188px;
+            height: 30px;
+            padding-top: 0px;
             margin-bottom: 20px;
         }
     }
@@ -82,12 +112,14 @@
         @include text-font(18px, 400, 145%);
         text-align: center;
         max-width: 274px;
+        height: 40px;
         margin-bottom: 40px;
 
         @include xs {
             @include text-font(16px, 400, 145%);
             text-align: center;
             max-width: 243px;
+            height: 35px;
             margin-bottom: 30px;
         }
     }
@@ -101,171 +133,175 @@
         width: 141px;
         height: 41px;
         padding: 13px 27px 16px;
-    }
-}
 
-.mainSpring {
-    background: url(../assets/images/банер\ 1.png);
-    @include background;
-    height: 400px;
-    position: relative;
-
-    @include xs {
-        background-image: url(../assets/images/баннер\ 1vert.png);
-        height: 562px;
-    }
-}
-
-.mainSpringBox {
-    @include absolute-right (50%, 20%);
-    width: 284px;
-
-    &__title {
-        @include heading-font(32px, 500, 125%);
-        margin-bottom: 30px;
+        @include xs {
+            @include text-font(14px, 500, 140%);
+            width: 132px;
+            height: 40px;
+            padding: 13px 28px 16px;
+        }
     }
 
-    &__text {
-        margin-bottom: 40px;
-    }
-
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 141px;
-        height: 41px;
-    }
-}
-
-.personalCare {
-    padding: 140px 98px;
-    overflow: hidden;
-
-    &__wrap {
+    .mainSpring {
+        background: url(../assets/images/банер\ 1.png);
+        @include background;
+        height: 400px;
         position: relative;
-    }
-}
 
-.personalCareImg {
-    @include absolute-right (50%, 0%);
-    width: 670px;
-    height: 451px;
-}
-
-.personalCareBox {
-    width: 670px;
-    height: 583px;
-    background-color: #f4f1ed;
-    padding: 100px;
-
-    &__title {
-        @include heading-font(32px, 500, 130%);
-        margin-bottom: 40px;
+        @include xs {
+            background-image: url(../assets/images/баннер\ 1vert.png);
+            height: 562px;
+        }
     }
 
-    &__text {
-        max-width: 329px;
-        margin-bottom: 45px;
+    .mainSpringBox {
+        @include absolute-right (50%, 20%);
+        width: 284px;
+
+        &__title {
+            @include heading-font(32px, 500, 125%);
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+        }
+
+        &__btn {
+            @include flex-center;
+            @include text-font(16px, 500, 140%);
+            @include border;
+            width: 141px;
+            height: 41px;
+        }
     }
 
-    &__text p {
-        @include text-font(18px, 400, 145%);
-        margin-bottom: 18px;
+    .personalCare {
+        padding: 140px 98px;
+        overflow: hidden;
+
+        &__wrap {
+            position: relative;
+        }
     }
 
-    &__text p:last-child {
-        margin-bottom: 0;
+    .personalCareImg {
+        @include absolute-right (50%, 0%);
+        width: 670px;
+        height: 451px;
     }
 
-    &__btn {
+    .personalCareBox {
+        width: 670px;
+        height: 583px;
+        background-color: #f4f1ed;
+        padding: 100px;
+
+        &__title {
+            @include heading-font(32px, 500, 130%);
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            max-width: 329px;
+            margin-bottom: 45px;
+        }
+
+        &__text p {
+            @include text-font(18px, 400, 145%);
+            margin-bottom: 18px;
+        }
+
+        &__text p:last-child {
+            margin-bottom: 0;
+        }
+
+        &__btn {
+            @include flex-center;
+            @include text-font(16px, 500, 140%);
+            @include border;
+            width: 200px;
+            height: 41px;
+        }
+    }
+
+    .history {
+        overflow: hidden;
+
+        &__wrap {
+            background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
+            width: 1366px;
+            height: 433px;
+        }
+    }
+
+    .historyBox {
         @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 200px;
-        height: 41px;
-    }
-}
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 120px;
 
-.history {
-    overflow: hidden;
+        &__text {
+            max-width: 761px;
+            margin-bottom: 50px;
+        }
 
-    &__wrap {
-        background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
-        width: 1366px;
-        height: 433px;
-    }
-}
+        &__text p {
+            @include heading-font(31px, 500, 125%);
+            text-align: center;
+            width: 761px;
+            height: 102px;
+        }
 
-.historyBox {
-    @include flex-center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-top: 120px;
+        &__text p :last-child {
+            margin-bottom: 0;
+        }
 
-    &__text {
-        max-width: 761px;
-        margin-bottom: 50px;
-    }
-
-    &__text p {
-        @include heading-font(31px, 500, 125%);
-        text-align: center;
-        width: 761px;
-        height: 102px;
+        &__btn {
+            @include flex-center;
+            @include text-font(16px, 500, 140%);
+            @include border;
+            width: 163px;
+            height: 41px;
+        }
     }
 
-    &__text p :last-child {
-        margin-bottom: 0;
+    .mainGallery {
+        overflow: hidden;
+
+
+
+        &__wrap {
+            @include flex-center;
+            background: #F8F8F6;
+            width: 1366px;
+            height: 594px;
+        }
     }
 
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 163px;
-        height: 41px;
+    .mainGalleryBox {
+
+        &__title {
+            @include heading-font(32px, 500, 125%);
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            max-width: 269px;
+            margin-bottom: 40px;
+        }
+
+        &__text p {
+            @include text-font(18px, 400, 145%);
+            width: 269px;
+            height: 66px;
+        }
+
+        &__btn {
+            @include flex-center;
+            @include text-font(16px, 500, 140%);
+            @include border;
+            width: 170px;
+            height: 41px;
+        }
     }
-}
-
-.mainGallery {
-    overflow: hidden;
-
-
-
-    &__wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #F8F8F6;
-        width: 1366px;
-        height: 594px;
-    }
-}
-
-.mainGalleryBox {
-
-    &__title {
-        @include heading-font(32px, 500, 125%);
-        margin-bottom: 30px;
-    }
-
-    &__text {
-        max-width: 269px;
-        margin-bottom: 40px;
-    }
-
-    &__text p {
-        @include text-font(18px, 400, 145%);
-        width: 269px;
-        height: 66px;
-    }
-
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 170px;
-        height: 41px;
-    }
-}

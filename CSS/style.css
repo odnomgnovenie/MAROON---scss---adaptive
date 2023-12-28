@@ -164,21 +164,56 @@ a {
 
 .mainCare__wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  max-width: 990px;
-  padding-bottom: 70px;
+  max-width: 1366px;
+  padding: 0px 168px 70px;
 }
 @media only screen and (max-width: 1365px) {
   .mainCare__wrap {
-    max-width: 679px;
     position: relative;
-    justify-content: space-between;
+    max-width: 768px;
+    padding: 0px 45px 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainCare__wrap {
+    display: flex;
+    position: relative;
+    padding: 190px 15px 60px;
   }
 }
 
+.mainCareBox {
+  width: 330px;
+}
+@media only screen and (max-width: 1365px) {
+  .mainCareBox {
+    width: 245px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainCareBox {
+    width: 130px;
+  }
+}
+.mainCareBox img {
+  width: 100%;
+  height: auto;
+}
 @media only screen and (max-width: 1365px) {
   .mainCareBox_levitation {
-    position: relative;
+    width: 274px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainCareBox_levitation {
+    max-width: 243px;
     position: absolute;
     top: 0%;
     left: 50%;
@@ -187,12 +222,11 @@ a {
 }
 
 .careImg {
-  width: 330px;
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 1365px) {
   .careImg {
-    width: 245px;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -242,6 +276,7 @@ a {
   font-weight: 500;
   line-height: normal;
   max-width: 260px;
+  height: 40px;
   padding-top: 61px;
   margin-bottom: 30px;
 }
@@ -253,6 +288,7 @@ a {
     font-weight: 500;
     line-height: normal;
     max-width: 242px;
+    height: 39px;
     padding-top: 28px;
     margin-bottom: 30px;
   }
@@ -264,8 +300,10 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    max-width: 242px;
-    padding-top: 60px;
+    max-width: 188px;
+    width: 188px;
+    height: 30px;
+    padding-top: 0px;
     margin-bottom: 20px;
   }
 }
@@ -277,6 +315,7 @@ a {
   line-height: 145%;
   text-align: center;
   max-width: 274px;
+  height: 40px;
   margin-bottom: 40px;
 }
 @media only screen and (max-width: 767px) {
@@ -288,6 +327,7 @@ a {
     line-height: 145%;
     text-align: center;
     max-width: 243px;
+    height: 35px;
     margin-bottom: 30px;
   }
 }

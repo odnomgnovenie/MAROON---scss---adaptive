@@ -142,83 +142,97 @@
 }
 
 .mainSpring {
-
     &__wrap {
+        position: relative;
         background: url(../assets/images/банер\ 1.png);
-        @include background ();
+        @include background();
         height: 400px;
         padding: 81px 0;
         position: relative;
-    }
 
-    @include sm {
-        background-image: url(../assets/images/банер\ 1\ 432.png);
-        @include background ();
-        height: 432px;
-        padding: 97px 0;
-    }
+        @include sm {
+            background-image: url(../assets/images/банер\ 1\ 432.png);
+            @include background();
+            height: 432px;
+            padding: 97px 0;
+        }
 
-    @include xs {
-        background-image: url(../assets/images/баннер\ 1vert.png);
-        @include background ();
-        height: 562px;
-        padding: 296px 38px 60px;
+        @include xs {
+            background-image: url(../assets/images/баннер\ 1vert.png);
+            @include background();
+            height: 562px;
+            padding: 296px 38px 60px;
+        }
     }
 }
 
 
+
 .mainSpringBox {
-    @include absolute-right (50%, 0%);
-    max-width: 400px;
+    @include absolute-right(50%, 0%);
+    max-width: 284px;
     margin-right: 284px;
 
-
     @include sm {
-        max-width: 432px;
+        max-width: 284px;
         margin-right: 85px;
-
     }
 
     @include xs {
-        @include absolute-right (0%, 0%);
-        max-width: 562px;
+        top: unset;
+        right: unset;
+        transform: unset;
+        max-width: 253px;
         text-align: center;
         margin: 0 auto;
-
-
     }
 
     &__title {
         @include heading-font(32px, 500, 125%);
-        max-width: 277px;
-        height: 62px;
         margin-bottom: 30px;
-
 
         @include sm {
             @include heading-font(32px, 500, 125%);
-            max-width: 277px;
+            margin-bottom: 30px;
 
         }
 
         @include xs {
             @include heading-font(28px, 500, 125%);
-            max-width: 243px;
+            margin-bottom: 25px;
+            height: 54px;
         }
     }
 
     &__text {
         margin-bottom: 40px;
+
+        p {
+            @include heading-font(18px, 400, 145%);
+            margin-bottom: 40px;
+            height: 65px;
+
+
+
+            @include xs {
+                @include heading-font(16px, 400, 145%);
+                margin-bottom: 30px;
+                height: 57px;
+            }
+        }
     }
 
     &__btn {
         @include flex-center;
         @include text-font(16px, 500, 140%);
         @include border;
-        max-width: 141px;
         width: 141px;
         height: 41px;
-        padding: 13px 27px 16px;
+        padding: 13px 28px 16px;
+
+        @include xs {
+            margin: 0 auto;
+        }
     }
 }
 
@@ -236,6 +250,36 @@
     @include absolute-right (50%, 0%);
     width: 670px;
     height: 451px;
+    display: block;
+
+    @include sm {
+        display: none;
+    }
+
+    @include xs {
+        display: none;
+    }
+
+    &_sm {
+        width: 398px;
+        height: 403px;
+        display: none;
+
+        @include sm {
+            display: block;
+        }
+    }
+
+    &_xs {
+        display: flex;
+        width: 250px;
+        height: 252px;
+        display: none;
+
+        @include xs {
+            display: block;
+        }
+    }
 }
 
 .personalCareBox {
@@ -243,6 +287,7 @@
     height: 583px;
     background-color: #f4f1ed;
     padding: 100px;
+
 
     &__title {
         @include heading-font(32px, 500, 130%);

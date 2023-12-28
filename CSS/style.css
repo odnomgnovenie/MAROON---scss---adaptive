@@ -19,8 +19,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 40px 98px 70px;
-  border-radius: 2px;
-  border: 1px solid #b3bac1;
+  /* вставка для хедера остальных страниц
+   padding: 40px 98px;
+  @include border; */
 }
 @media only screen and (max-width: 1365px) {
   .header__wrap {
@@ -210,6 +211,8 @@ a {
     position: absolute;
     top: 0%;
     left: 50%;
+    /*    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0); */
     transform: translate(-50%, 0);
   }
 }
@@ -219,6 +222,8 @@ a {
     position: absolute;
     top: 0%;
     left: 50%;
+    /*    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0); */
     transform: translate(-50%, 0);
   }
 }
@@ -361,6 +366,7 @@ a {
 }
 
 .mainSpring__wrap {
+  position: relative;
   background: url(../assets/images/банер\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +376,7 @@ a {
   position: relative;
 }
 @media only screen and (max-width: 1365px) {
-  .mainSpring {
+  .mainSpring__wrap {
     background-image: url(../assets/images/банер\ 1\ 432.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -380,7 +386,7 @@ a {
   }
 }
 @media only screen and (max-width: 767px) {
-  .mainSpring {
+  .mainSpring__wrap {
     background-image: url(../assets/images/баннер\ 1vert.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -394,23 +400,24 @@ a {
   position: absolute;
   top: 50%;
   right: 0%;
+  /*  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%); */
   transform: translate(0, -50%);
-  max-width: 400px;
+  max-width: 284px;
   margin-right: 284px;
 }
 @media only screen and (max-width: 1365px) {
   .mainSpringBox {
-    max-width: 432px;
+    max-width: 284px;
     margin-right: 85px;
   }
 }
 @media only screen and (max-width: 767px) {
   .mainSpringBox {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    transform: translate(0, -50%);
-    max-width: 562px;
+    top: unset;
+    right: unset;
+    transform: unset;
+    max-width: 253px;
     text-align: center;
     margin: 0 auto;
   }
@@ -421,8 +428,6 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
-  max-width: 277px;
-  height: 62px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 1365px) {
@@ -432,7 +437,7 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
-    max-width: 277px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -442,11 +447,32 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
-    max-width: 243px;
+    margin-bottom: 25px;
+    height: 54px;
   }
 }
 .mainSpringBox__text {
   margin-bottom: 40px;
+}
+.mainSpringBox__text p {
+  font-size: 18px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%;
+  margin-bottom: 40px;
+  height: 65px;
+}
+@media only screen and (max-width: 767px) {
+  .mainSpringBox__text p {
+    font-size: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    margin-bottom: 30px;
+    height: 57px;
+  }
 }
 .mainSpringBox__btn {
   display: flex;
@@ -459,10 +485,14 @@ a {
   line-height: 140%;
   border-radius: 2px;
   border: 1px solid #b3bac1;
-  max-width: 141px;
   width: 141px;
   height: 41px;
-  padding: 13px 27px 16px;
+  padding: 13px 28px 16px;
+}
+@media only screen and (max-width: 767px) {
+  .mainSpringBox__btn {
+    margin: 0 auto;
+  }
 }
 
 .personalCare {
@@ -477,9 +507,43 @@ a {
   position: absolute;
   top: 50%;
   right: 0%;
+  /*  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%); */
   transform: translate(0, -50%);
   width: 670px;
   height: 451px;
+  display: block;
+}
+@media only screen and (max-width: 1365px) {
+  .personalCareImg {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCareImg {
+    display: none;
+  }
+}
+.personalCareImg_sm {
+  width: 398px;
+  height: 403px;
+  display: none;
+}
+@media only screen and (max-width: 1365px) {
+  .personalCareImg_sm {
+    display: block;
+  }
+}
+.personalCareImg_xs {
+  display: flex;
+  width: 250px;
+  height: 252px;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .personalCareImg_xs {
+    display: block;
+  }
 }
 
 .personalCareBox {

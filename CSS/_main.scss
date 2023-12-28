@@ -1,3 +1,5 @@
+/* блок Натуральная косметика
+для бережного ухода за кожей */
 .mainCare {
 
     &__wrap {
@@ -141,6 +143,8 @@
     }
 }
 
+/* блок Встречайте весну
+вместе с нами */
 .mainSpring {
     &__wrap {
         position: relative;
@@ -165,8 +169,6 @@
         }
     }
 }
-
-
 
 .mainSpringBox {
     @include absolute-right(50%, 0%);
@@ -233,6 +235,8 @@
 }
 
 
+
+/* блок Индивидуальный уход */
 .personalCare {
     padding: 140px 98px;
     overflow: hidden;
@@ -313,6 +317,9 @@
     }
 }
 
+
+
+/* блок Наша история */
 .history {
     overflow: hidden;
 

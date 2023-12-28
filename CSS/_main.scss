@@ -145,46 +145,60 @@
 
     &__wrap {
         background: url(../assets/images/банер\ 1.png);
-        @include background;
+        @include background ();
         height: 400px;
+        padding: 81px 0;
         position: relative;
+    }
 
-        @include sm {
-            background-image: url(../assets/images/банер\ 1\ 432.png);
-            height: 432px;
-        }
+    @include sm {
+        background-image: url(../assets/images/банер\ 1\ 432.png);
+        @include background ();
+        height: 432px;
+        padding: 97px 0;
+    }
 
-        @include xs {
-            background-image: url(../assets/images/баннер\ 1vert.png);
-            height: 562px;
-        }
+    @include xs {
+        background-image: url(../assets/images/баннер\ 1vert.png);
+        @include background ();
+        height: 562px;
+        padding: 296px 38px 60px;
     }
 }
 
+
 .mainSpringBox {
     @include absolute-right (50%, 0%);
-    max-width: 284px;
+    max-width: 400px;
     margin-right: 284px;
 
 
     @include sm {
+        max-width: 432px;
         margin-right: 85px;
+
     }
 
     @include xs {
-        /* @include absolut-top-center(0%, 50%); */
-        /* margin-top: 296px; */
+        @include absolute-right (0%, 0%);
+        max-width: 562px;
+        text-align: center;
+        margin: 0 auto;
+
+
     }
 
     &__title {
         @include heading-font(32px, 500, 125%);
         max-width: 277px;
-        padding-top: 81px;
+        height: 62px;
         margin-bottom: 30px;
+
 
         @include sm {
             @include heading-font(32px, 500, 125%);
             max-width: 277px;
+
         }
 
         @include xs {
@@ -202,7 +216,6 @@
         @include text-font(16px, 500, 140%);
         @include border;
         max-width: 141px;
-        margin: 0 auto;
         width: 141px;
         height: 41px;
         padding: 13px 27px 16px;

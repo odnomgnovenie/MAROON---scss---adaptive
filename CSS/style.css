@@ -364,18 +364,27 @@ a {
   background-size: cover;
   background-position: center center;
   height: 400px;
+  padding: 81px 0;
   position: relative;
 }
 @media only screen and (max-width: 1365px) {
-  .mainSpring__wrap {
+  .mainSpring {
     background-image: url(../assets/images/банер\ 1\ 432.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 432px;
+    padding: 97px 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .mainSpring__wrap {
+  .mainSpring {
     background-image: url(../assets/images/баннер\ 1vert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 562px;
+    padding: 296px 38px 60px;
   }
 }
 
@@ -384,18 +393,24 @@ a {
   top: 50%;
   right: 0%;
   transform: translate(0, -50%);
-  max-width: 284px;
+  max-width: 400px;
   margin-right: 284px;
 }
 @media only screen and (max-width: 1365px) {
   .mainSpringBox {
+    max-width: 432px;
     margin-right: 85px;
   }
 }
 @media only screen and (max-width: 767px) {
   .mainSpringBox {
-    /* @include absolut-top-center(0%, 50%); */
-    /* margin-top: 296px; */
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(0, -50%);
+    max-width: 562px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 .mainSpringBox__title {
@@ -405,7 +420,7 @@ a {
   font-weight: 500;
   line-height: 125%;
   max-width: 277px;
-  padding-top: 81px;
+  height: 62px;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 1365px) {
@@ -443,7 +458,6 @@ a {
   border-radius: 2px;
   border: 1px solid #b3bac1;
   max-width: 141px;
-  margin: 0 auto;
   width: 141px;
   height: 41px;
   padding: 13px 27px 16px;

@@ -2,6 +2,7 @@
     &__wrap {
         @include flex-between;
         padding: 40px 98px 70px;
+        @include border;
 
         @include sm {
             @include flex-between;
@@ -17,7 +18,7 @@
 }
 
 
-.Hamburger {
+.hamburger {
     @include flex-center;
     text-align: center;
     display: none;

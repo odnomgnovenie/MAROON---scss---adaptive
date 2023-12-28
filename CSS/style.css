@@ -19,6 +19,8 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 40px 98px 70px;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
 }
 @media only screen and (max-width: 1365px) {
   .header__wrap {
@@ -37,7 +39,7 @@ a {
   }
 }
 
-.Hamburger {
+.hamburger {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,31 +47,31 @@ a {
   display: none;
 }
 @media only screen and (max-width: 1365px) {
-  .Hamburger {
+  .hamburger {
     display: flex;
   }
 }
-.Hamburger_sm {
+.hamburger_sm {
   width: 24px;
   display: none;
 }
 @media only screen and (max-width: 1365px) {
-  .Hamburger_sm {
+  .hamburger_sm {
     display: block;
   }
 }
 @media only screen and (max-width: 767px) {
-  .Hamburger_sm {
+  .hamburger_sm {
     display: none;
   }
 }
-.Hamburger_xs {
+.hamburger_xs {
   width: 22px;
   display: none;
   text-align: center;
 }
 @media only screen and (max-width: 767px) {
-  .Hamburger_xs {
+  .hamburger_xs {
     display: block;
   }
 }

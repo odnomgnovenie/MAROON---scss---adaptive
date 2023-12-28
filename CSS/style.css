@@ -40,7 +40,7 @@ a {
 .Hamburger {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   text-align: center;
   display: none;
 }
@@ -97,7 +97,7 @@ a {
 .nav {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   gap: 51px;
 }
 @media only screen and (max-width: 1365px) {
@@ -232,7 +232,7 @@ a {
 .mainInfo {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   flex-direction: column;
 }
 .mainInfo__title {
@@ -294,7 +294,7 @@ a {
 .mainInfo__btn {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -345,7 +345,7 @@ a {
 .mainSpringBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -406,7 +406,7 @@ a {
 .personalCareBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -430,7 +430,7 @@ a {
 .historyBox {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   flex-direction: column;
   margin: 0 auto;
   padding-top: 120px;
@@ -455,7 +455,7 @@ a {
 .historyBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;
@@ -503,7 +503,7 @@ a {
 .mainGalleryBox__btn {
   display: flex;
   justify-content: center;
-  align-items: center center;
+  align-items: center;
   font-size: 16px;
   font-family: Mplus 1p;
   font-style: normal;

@@ -19,19 +19,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 40px 98px 70px;
-  /*         &_border {
-      padding: 40px 98px;
-      @include border;
-
-      @include sm {
-          padding: 40px 45px;
-      }
-
-      @include xs {
-          padding: 30px 15px;
-      }
-
-  } */
 }
 @media only screen and (max-width: 1365px) {
   .header__wrap {
@@ -44,22 +31,26 @@ a {
   }
 }
 
-.header_border__wrap {
-  padding: 40px 98px;
-  border-radius: 2px;
-  border: 1px solid #b3bac1;
-}
-@media only screen and (max-width: 1365px) {
-  .header_border__wrap {
-    padding: 40px 45px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .header_border__wrap {
-    padding: 30px 15px;
-  }
-}
+/* Блок хедера для страниц с подчеркиванием - вставлять вместо предыдущего блока */
+/* .header {
+    &__wrap {
+        @include flex-between;
 
+        &_border {
+            padding: 40px 98px;
+            @include border;
+
+            @include sm {
+                padding: 40px 45px;
+            }
+
+            @include xs {
+                padding: 30px 15px;
+            }
+
+        }
+    }
+} */
 .hamburger {
   display: flex;
   justify-content: center;
@@ -388,7 +379,7 @@ a {
 }
 
 /* блок Встречайте весну
-вместе с нами */
+  вместе с нами */
 .mainSpring__wrap {
   position: relative;
   background: url(../assets/images/банер\ 1.png);
@@ -512,6 +503,11 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .mainSpringBox__btn {
+    font-size: 14px;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
     width: 132px;
     height: 40px;
     margin: 0 auto;
@@ -520,8 +516,22 @@ a {
 
 /* блок Индивидуальный уход */
 .personalCare {
-  padding: 140px 98px;
   overflow: hidden;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 140px 98px;
+}
+@media only screen and (max-width: 1365px) {
+  .personalCare {
+    max-width: 768px;
+    padding: 120px 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCare {
+    max-width: 320px;
+    padding: 80px 15px 272px;
+  }
 }
 .personalCare__wrap {
   position: relative;
@@ -534,38 +544,53 @@ a {
   /*  -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%); */
   transform: translate(0, -50%);
-  width: 670px;
-  height: 451px;
-  display: block;
 }
 @media only screen and (max-width: 1365px) {
   .personalCareImg {
-    display: none;
+    right: -45px;
   }
 }
 @media only screen and (max-width: 767px) {
   .personalCareImg {
+    display: block;
+    top: unset;
+    right: unset;
+    bottom: -90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.personalCareImg__xl {
+  width: 670px;
+  height: 451px;
+}
+@media only screen and (max-width: 1365px) {
+  .personalCareImg__xl {
     display: none;
   }
 }
-.personalCareImg_sm {
-  width: 398px;
-  height: 403px;
+.personalCareImg__sm {
   display: none;
+  width: 281px;
+  height: 403px;
 }
 @media only screen and (max-width: 1365px) {
-  .personalCareImg_sm {
+  .personalCareImg__sm {
     display: block;
   }
 }
-.personalCareImg_xs {
-  display: flex;
+@media only screen and (max-width: 767px) {
+  .personalCareImg__sm {
+    display: none;
+  }
+}
+.personalCareImg__xs {
+  display: none;
   width: 250px;
   height: 252px;
-  display: none;
 }
 @media only screen and (max-width: 767px) {
-  .personalCareImg_xs {
+  .personalCareImg__xs {
     display: block;
   }
 }
@@ -576,6 +601,19 @@ a {
   background-color: #f4f1ed;
   padding: 100px;
 }
+@media only screen and (max-width: 1365px) {
+  .personalCareBox {
+    width: 100%;
+    height: unset;
+    padding: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox {
+    text-align: center;
+    padding: 60px 31px 110px;
+  }
+}
 .personalCareBox__title {
   font-size: 32px;
   font-family: Raleway;
@@ -584,9 +622,27 @@ a {
   line-height: 130%;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 767px) {
+  .personalCareBox__title {
+    font-size: 28px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 25px;
+  }
+}
 .personalCareBox__text {
   max-width: 329px;
+  height: 234px;
   margin-bottom: 45px;
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox__text {
+    max-width: 226px;
+    height: 123px;
+    margin-bottom: 30px;
+  }
 }
 .personalCareBox__text p {
   font-size: 18px;
@@ -594,7 +650,20 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
-  margin-bottom: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox__text p {
+    font-size: 16px;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox__text p:first-child {
+    display: none;
+  }
 }
 .personalCareBox__text p:last-child {
   margin-bottom: 0;
@@ -613,15 +682,42 @@ a {
   width: 200px;
   height: 41px;
 }
+@media only screen and (max-width: 767px) {
+  .personalCareBox__btn {
+    display: inline-flex;
+    font-size: 14px;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    width: 182px;
+    height: 40px;
+  }
+}
 
 /* блок Наша история */
 .history {
-  overflow: hidden;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1365px) {
+  .history {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .history {
+    max-width: 320px;
+  }
 }
 .history__wrap {
   background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
-  width: 1366px;
   height: 433px;
+}
+@media only screen and (max-width: 1365px) {
+  .history__wrap {
+    height: unset;
+  }
 }
 
 .historyBox {
@@ -629,12 +725,29 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 761px;
   margin: 0 auto;
   padding-top: 120px;
 }
+@media only screen and (max-width: 1365px) {
+  .historyBox {
+    max-width: 652px;
+    padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .historyBox {
+    max-width: 242px;
+    padding: 60px 0;
+  }
+}
 .historyBox__text {
-  max-width: 761px;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .historyBox__text {
+    margin-bottom: 30px;
+  }
 }
 .historyBox__text p {
   font-size: 31px;
@@ -643,11 +756,15 @@ a {
   font-weight: 500;
   line-height: 125%;
   text-align: center;
-  width: 761px;
-  height: 102px;
 }
-.historyBox__text p :last-child {
-  margin-bottom: 0;
+@media only screen and (max-width: 767px) {
+  .historyBox__text p {
+    font-size: 22px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
 }
 .historyBox__btn {
   display: flex;
@@ -663,6 +780,17 @@ a {
   width: 163px;
   height: 41px;
 }
+@media only screen and (max-width: 767px) {
+  .historyBox__btn {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
 
 .mainGallery {
   overflow: hidden;
@@ -671,7 +799,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F8F8F6;
+  background: #f8f8f6;
   width: 1366px;
   height: 594px;
 }
@@ -710,6 +838,17 @@ a {
   border: 1px solid #b3bac1;
   width: 170px;
   height: 41px;
+}
+@media only screen and (max-width: 767px) {
+  .mainGalleryBox__btn {
+    font-size: 14px;
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    width: 154px;
+    height: 40px;
+  }
 }
 
 body {

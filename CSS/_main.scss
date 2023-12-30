@@ -1,7 +1,6 @@
 /* блок Натуральная косметика
 для бережного ухода за кожей */
 .mainCare {
-
     &__wrap {
         @include flex-between;
         margin: 0 auto;
@@ -41,13 +40,12 @@
     &_levitation {
         @include sm {
             width: 274px;
-            @include absolut-top-center (0%, 50%);
+            @include absolut-top-center(0%, 50%);
         }
 
         @include xs {
             max-width: 243px;
-            @include absolut-top-center (0%, 50%);
-
+            @include absolut-top-center(0%, 50%);
         }
     }
 }
@@ -138,13 +136,12 @@
             width: 132px;
             height: 40px;
             padding: 13px 28px 16px;
-
         }
     }
 }
 
 /* блок Встречайте весну
-вместе с нами */
+  вместе с нами */
 .mainSpring {
     &__wrap {
         position: relative;
@@ -196,7 +193,6 @@
         @include sm {
             @include heading-font(32px, 500, 125%);
             margin-bottom: 30px;
-
         }
 
         @include xs {
@@ -227,6 +223,7 @@
         padding: 13px 28px 16px;
 
         @include xs {
+            @include text-font(14px, 500, 140%);
             width: 132px;
             height: 40px;
             margin: 0 auto;
@@ -234,12 +231,22 @@
     }
 }
 
-
-
 /* блок Индивидуальный уход */
 .personalCare {
-    padding: 140px 98px;
     overflow: hidden;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 140px 98px;
+
+    @include sm {
+        max-width: 768px;
+        padding: 120px 45px;
+    }
+
+    @include xs {
+        max-width: 320px;
+        padding: 80px 15px 272px;
+    }
 
     &__wrap {
         position: relative;
@@ -247,34 +254,48 @@
 }
 
 .personalCareImg {
-    @include absolute-right (50%, 0%);
-    width: 670px;
-    height: 451px;
-    display: block;
+    @include absolute-right(50%, 0%);
 
     @include sm {
-        display: none;
+        right: -45px;
     }
 
     @include xs {
-        display: none;
+        display: block;
+        top: unset;
+        right: unset;
+        bottom: -90px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
-    &_sm {
-        width: 398px;
-        height: 403px;
+    &__xl {
+        width: 670px;
+        height: 451px;
+
+        @include sm {
+            display: none;
+        }
+    }
+
+    &__sm {
         display: none;
+        width: 281px;
+        height: 403px;
 
         @include sm {
             display: block;
         }
+
+        @include xs {
+            display: none;
+        }
     }
 
-    &_xs {
-        display: flex;
+    &__xs {
+        display: none;
         width: 250px;
         height: 252px;
-        display: none;
 
         @include xs {
             display: block;
@@ -288,20 +309,51 @@
     background-color: #f4f1ed;
     padding: 100px;
 
+    @include sm {
+        width: 100%;
+        height: unset;
+        padding: 60px;
+    }
+
+    @include xs {
+        text-align: center;
+        padding: 60px 31px 110px;
+    }
 
     &__title {
         @include heading-font(32px, 500, 130%);
         margin-bottom: 40px;
+
+        @include xs {
+            @include heading-font(28px, 500, 125%);
+            margin-bottom: 25px;
+        }
     }
 
     &__text {
         max-width: 329px;
+        height: 234px;
         margin-bottom: 45px;
+
+        @include xs {
+            max-width: 226px;
+            height: 123px;
+            margin-bottom: 30px;
+        }
     }
 
     &__text p {
         @include text-font(18px, 400, 145%);
-        margin-bottom: 18px;
+
+        @include xs {
+            @include text-font(16px, 400, 145%);
+        }
+    }
+
+    &__text p:first-child {
+        @include xs {
+            display: none;
+        }
     }
 
     &__text p:last-child {
@@ -314,42 +366,71 @@
         @include border;
         width: 200px;
         height: 41px;
+
+        @include xs {
+            display: inline-flex;
+            @include text-font(14px, 500, 140%);
+            width: 182px;
+            height: 40px;
+        }
     }
 }
 
-
-
 /* блок Наша история */
 .history {
-    overflow: hidden;
+    max-width: 1366px;
+    margin: 0 auto;
+
+    @include sm {
+        max-width: 768px;
+    }
+
+    @include xs {
+        max-width: 320px;
+    }
 
     &__wrap {
         background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
-        width: 1366px;
         height: 433px;
+
+        @include sm {
+            height: unset;
+        }
     }
 }
 
 .historyBox {
     @include flex-center;
     flex-direction: column;
+    max-width: 761px;
     margin: 0 auto;
     padding-top: 120px;
 
+    @include sm {
+        max-width: 652px;
+        padding: 100px 0;
+    }
+
+    @include xs {
+        max-width: 242px;
+        padding: 60px 0;
+    }
+
     &__text {
-        max-width: 761px;
         margin-bottom: 50px;
-    }
 
-    &__text p {
-        @include heading-font(31px, 500, 125%);
-        text-align: center;
-        width: 761px;
-        height: 102px;
-    }
+        @include xs {
+            margin-bottom: 30px;
+        }
 
-    &__text p :last-child {
-        margin-bottom: 0;
+        p {
+            @include heading-font(31px, 500, 125%);
+            text-align: center;
+
+            @include xs {
+                @include heading-font(22px, 500, 125%);
+            }
+        }
     }
 
     &__btn {
@@ -358,24 +439,27 @@
         @include border;
         width: 163px;
         height: 41px;
+
+        @include xs {
+            width: 154px;
+            height: 40px;
+            @include text-font(14px, 500, 140%);
+        }
     }
 }
 
 .mainGallery {
     overflow: hidden;
 
-
-
     &__wrap {
         @include flex-center;
-        background: #F8F8F6;
+        background: #f8f8f6;
         width: 1366px;
         height: 594px;
     }
 }
 
 .mainGalleryBox {
-
     &__title {
         @include heading-font(32px, 500, 125%);
         margin-bottom: 30px;
@@ -398,5 +482,11 @@
         @include border;
         width: 170px;
         height: 41px;
+
+        @include xs {
+            @include text-font(14px, 500, 140%);
+            width: 154px;
+            height: 40px;
+        }
     }
 }

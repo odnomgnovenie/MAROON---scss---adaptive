@@ -10,38 +10,29 @@
         @include xs {
             padding: 30px 15px 60px;
         }
+    }
+}
 
-        /*         &_border {
+/* Блок хедера для страниц с подчеркиванием - вставлять вместо предыдущего блока */
+/* .header {
+    &__wrap {
+        @include flex-between;
+
+        &_border {
             padding: 40px 98px;
             @include border;
-    
+
             @include sm {
                 padding: 40px 45px;
             }
-    
+
             @include xs {
                 padding: 30px 15px;
             }
 
-        } */
-
-    }
-}
-
-.header_border {
-    &__wrap {
-        padding: 40px 98px;
-        @include border;
-
-        @include sm {
-            padding: 40px 45px;
-        }
-
-        @include xs {
-            padding: 30px 15px;
         }
     }
-}
+} */
 
 .hamburger {
     @include flex-center;

@@ -19,24 +19,44 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 40px 98px 70px;
-  /* вставка для хедера остальных страниц
-   padding: 40px 98px;
-  @include border; */
+  /*         &_border {
+      padding: 40px 98px;
+      @include border;
+
+      @include sm {
+          padding: 40px 45px;
+      }
+
+      @include xs {
+          padding: 30px 15px;
+      }
+
+  } */
 }
 @media only screen and (max-width: 1365px) {
   .header__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px 45px 70px;
   }
 }
 @media only screen and (max-width: 767px) {
   .header__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 15px 60px;
+  }
+}
+
+.header_border__wrap {
+  padding: 40px 98px;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+}
+@media only screen and (max-width: 1365px) {
+  .header_border__wrap {
+    padding: 40px 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header_border__wrap {
+    padding: 30px 15px;
   }
 }
 

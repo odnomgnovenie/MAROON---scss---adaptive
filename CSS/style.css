@@ -555,7 +555,7 @@ a {
     display: block;
     top: unset;
     right: unset;
-    bottom: -90px;
+    bottom: -100px;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -640,7 +640,7 @@ a {
 @media only screen and (max-width: 767px) {
   .personalCareBox__text {
     max-width: 226px;
-    height: 123px;
+    height: unset;
     margin-bottom: 30px;
   }
 }
@@ -792,48 +792,6 @@ a {
   }
 }
 
-/* .mainGallery {
-    overflow: hidden;
-
-    &__wrap {
-      @include flex-center;
-      background: #f8f8f6;
-      width: 1366px;
-      height: 594px;
-    }
-  }
-
-  .mainGalleryBox {
-    &__title {
-      @include heading-font(32px, 500, 125%);
-      margin-bottom: 30px;
-    }
-
-    &__text {
-      max-width: 269px;
-      margin-bottom: 40px;
-    }
-
-    &__text p {
-      @include text-font(18px, 400, 145%);
-      width: 269px;
-      height: 66px;
-    }
-
-    &__btn {
-      @include flex-center;
-      @include text-font(16px, 500, 140%);
-      @include border;
-      width: 170px;
-      height: 41px;
-
-      @include xs {
-        @include text-font(14px, 500, 140%);
-        width: 154px;
-        height: 40px;
-      }
-    }
-  } */
 body {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;

@@ -1,0 +1,142 @@
+/* блок Натуральная косметика
+для бережного ухода за кожей */
+.mainCare {
+    &__wrap {
+        overflow: hidden;
+        max-width: 1366px;
+        @include flex-between;
+        margin: 0 auto;
+        padding: 0px 168px 70px;
+
+        @include sm {
+            position: relative;
+            max-width: 768px;
+            padding: 0px 45px 70px;
+        }
+
+        @include xs {
+            display: flex;
+            position: relative;
+            padding: 190px 15px 60px;
+        }
+    }
+}
+
+.mainCareBox {
+    width: 330px;
+
+    @include sm {
+        width: 245px;
+    }
+
+    @include xs {
+        width: 130px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    &_levitation {
+        @include sm {
+            width: 274px;
+            @include absolut-top-center(0%, 50%);
+        }
+
+        @include xs {
+            max-width: 243px;
+            @include absolut-top-center(0%, 50%);
+        }
+    }
+}
+
+.careImg {
+    margin-bottom: 15px;
+
+    @include sm {
+        margin-bottom: 15px;
+    }
+
+    @include xs {
+        width: 130px;
+        margin-bottom: 10px;
+    }
+}
+
+.careLink {
+    @include flex-between;
+    @include text-font(16px, 500, 140%);
+
+    @include xs {
+        @include text-font(12px, 500, 140%);
+    }
+}
+
+.tap {
+    @include xs {
+        width: 23px;
+        height: 10px;
+    }
+}
+
+.mainInfo {
+    @include flex-center;
+    flex-direction: column;
+
+    &__title {
+        @include heading-font(58px, 500, normal);
+        max-width: 260px;
+        padding-top: 61px;
+        margin-bottom: 30px;
+
+        @include sm {
+            @include heading-font(54px, 500, normal);
+            max-width: 242px;
+            padding-top: 28px;
+            margin-bottom: 30px;
+        }
+
+        @include xs {
+            @include heading-font(42px, 500, normal);
+            max-width: 188px;
+            height: 40px;
+            padding-top: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text p {
+        @include text-font(18px, 400, 145%);
+        text-align: center;
+        max-width: 274px;
+        height: 40px;
+        margin-bottom: 40px;
+
+        @include xs {
+            @include text-font(16px, 400, 145%);
+            text-align: center;
+            max-width: 243px;
+            height: 35px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__btn {
+        @include flex-center;
+        @include text-font(16px, 500, 140%);
+        @include border;
+        max-width: 141px;
+        margin: 0 auto;
+        width: 141px;
+        height: 41px;
+        padding: 13px 27px 16px;
+
+        @include xs {
+            @include text-font(14px, 500, 140%);
+            width: 132px;
+            height: 40px;
+            padding: 13px 28px 16px;
+        }
+    }
+}

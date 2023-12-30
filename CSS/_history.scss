@@ -1,0 +1,71 @@
+/* блок Наша история */
+.history {
+    max-width: 1366px;
+    margin: 0 auto;
+
+    @include sm {
+        max-width: 768px;
+    }
+
+    @include xs {
+        max-width: 320px;
+    }
+
+    &__wrap {
+        background-image: url(/assets/images/600693-PMYQNV-922\ 1.jpg);
+        height: 433px;
+
+        @include sm {
+            height: unset;
+        }
+    }
+}
+
+.historyBox {
+    @include flex-center;
+    flex-direction: column;
+    max-width: 761px;
+    margin: 0 auto;
+    padding-top: 120px;
+
+    @include sm {
+        max-width: 652px;
+        padding: 100px 0;
+    }
+
+    @include xs {
+        max-width: 242px;
+        padding: 60px 0;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+
+        @include xs {
+            margin-bottom: 30px;
+        }
+
+        p {
+            @include heading-font(31px, 500, 125%);
+            text-align: center;
+
+            @include xs {
+                @include heading-font(22px, 500, 125%);
+            }
+        }
+    }
+
+    &__btn {
+        @include flex-center;
+        @include text-font(16px, 500, 140%);
+        @include border;
+        width: 163px;
+        height: 41px;
+
+        @include xs {
+            width: 154px;
+            height: 40px;
+            @include text-font(14px, 500, 140%);
+        }
+    }
+}
